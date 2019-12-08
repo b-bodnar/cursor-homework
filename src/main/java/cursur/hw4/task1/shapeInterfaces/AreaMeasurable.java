@@ -1,4 +1,4 @@
-package cursur.hw4.task1.shapeInterfases;
+package cursur.hw4.task1.shapeInterfaces;
 
 public interface AreaMeasurable {
 
