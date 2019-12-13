@@ -1,9 +1,11 @@
 package cursor.hw4.task1.shape.plane.impl;
 
+import cursor.hw4.task1.abstraction.AreaMeasurable;
+import cursor.hw4.task1.abstraction.PerimeterMeasurable;
 import cursor.hw4.task1.shape.plane.PlaneShape;
 import cursor.hw4.task1.vertex.Vertex2D;
 
-public class Circle extends PlaneShape {
+public class Circle extends PlaneShape  implements AreaMeasurable, PerimeterMeasurable {
 
     private double radius;
 

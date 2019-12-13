@@ -1,9 +1,8 @@
 package cursor.hw4.task1.shape;
 
-import cursor.hw4.task1.abstraction.AreaMeasurable;
 import cursor.hw4.task1.vertex.Vertex;
 
-public abstract class Shape implements AreaMeasurable {
+public abstract class Shape {
 
     private Vertex vertexA;
 

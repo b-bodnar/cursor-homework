@@ -1,10 +1,12 @@
 package cursor.hw4.task1.shape.plane.impl;
 
+import cursor.hw4.task1.abstraction.AreaMeasurable;
+import cursor.hw4.task1.abstraction.PerimeterMeasurable;
 import cursor.hw4.task1.shape.plane.PlaneShape;
 import cursor.hw4.task1.vertex.Vertex;
 import cursor.hw4.task1.vertex.Vertex2D;
 
-public class Triangle extends PlaneShape {
+public class Triangle extends PlaneShape  implements AreaMeasurable, PerimeterMeasurable {
 
     private Vertex2D vertexB;
     private Vertex2D vertexC;
