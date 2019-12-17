@@ -10,10 +10,6 @@ public class MyList<T extends Number> {
         list.add(element);
     }
 
-    public List<T> getList() {
-        return list;
-    }
-
     public OptionalDouble getMax() {
         return list.stream()
                 .mapToDouble(Number::doubleValue)
