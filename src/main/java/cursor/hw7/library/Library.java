@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class Library {
 
-    private static Map<LocalDate, String> registration = new HashMap<>();
+    private static Map<LocalDate, String> dateToBookMap = new HashMap<>();
     private static List<String> books = fillBooks();
     private static Library library;
 
@@ -24,12 +24,11 @@ public class Library {
     }
 
     public String showTakenBookByDate(LocalDate date) {
-        return registration.getOrDefault(date, "There are no books for this date");
+        return dateToBookMap.getOrDefault(date, "There are no books for this date");
     }
 
     public List<String> showTakenBookByRangeOfDate(LocalDate from, LocalDate to) {
-        return registration.entrySet()
-                .stream()
+        return dateToBookMap.entrySet().stream()
                 .filter(entry ->
                         entry.getKey().isAfter(from.minusDays(1))
                                 && entry.getKey().isBefore(to.plusDays(1)))
@@ -39,7 +38,7 @@ public class Library {
 
     public boolean takeBook(LocalDate date, String bookName) {
         if (books.remove(bookName)) {
-            registration.put(date, bookName);
+            dateToBookMap.put(date, bookName);
             return true;
         }
         return false;
