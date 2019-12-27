@@ -3,7 +3,7 @@ package cursor.hw5.task2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyList <T extends Comparable<T>>{
+public class MyList<T extends Comparable<T>> {
 
     private List<T> list = new ArrayList<>();
 
