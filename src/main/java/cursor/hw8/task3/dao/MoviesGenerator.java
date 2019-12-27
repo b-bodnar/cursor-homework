@@ -2,6 +2,7 @@ package cursor.hw8.task3.dao;
 
 import cursor.hw8.task3.model.Genre;
 import cursor.hw8.task3.model.Movie;
+
 import java.util.ArrayList;
 import java.util.List;
 

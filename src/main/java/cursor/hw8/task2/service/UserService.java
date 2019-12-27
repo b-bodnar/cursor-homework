@@ -2,6 +2,7 @@ package cursor.hw8.task2.service;
 
 import cursor.hw8.task2.dao.UserGenerator;
 import cursor.hw8.task2.model.User;
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
