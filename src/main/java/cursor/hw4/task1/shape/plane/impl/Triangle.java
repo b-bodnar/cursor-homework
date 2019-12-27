@@ -6,7 +6,7 @@ import cursor.hw4.task1.shape.plane.PlaneShape;
 import cursor.hw4.task1.vertex.Vertex;
 import cursor.hw4.task1.vertex.Vertex2D;
 
-public class Triangle extends PlaneShape  implements AreaMeasurable, PerimeterMeasurable {
+public class Triangle extends PlaneShape implements AreaMeasurable, PerimeterMeasurable {
 
     private Vertex2D vertexB;
     private Vertex2D vertexC;

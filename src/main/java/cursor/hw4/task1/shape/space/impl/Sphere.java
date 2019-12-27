@@ -5,7 +5,7 @@ import cursor.hw4.task1.abstraction.VolumeMeasurable;
 import cursor.hw4.task1.shape.space.SpaceShape;
 import cursor.hw4.task1.vertex.Vertex3D;
 
-public class Sphere extends SpaceShape  implements AreaMeasurable, VolumeMeasurable {
+public class Sphere extends SpaceShape implements AreaMeasurable, VolumeMeasurable {
 
     private double radius;
 

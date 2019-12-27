@@ -16,7 +16,7 @@ import java.util.List;
 public class Executor {
 
     public void start() {
-         print(generateData());
+        print(generateData());
     }
 
     private void print(List<Shape> shapes) {
