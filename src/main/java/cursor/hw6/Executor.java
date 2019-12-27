@@ -3,6 +3,7 @@ package cursor.hw6;
 import cursor.hw6.util.ElementRemover;
 import cursor.hw6.util.FruitReplacer;
 import cursor.hw6.util.SimilarElementsChecker;
+
 import java.util.ArrayList;
 import java.util.List;
 
