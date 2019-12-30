@@ -1,6 +1,6 @@
 out/
 .DS_Store
 *.class
-.idea
+/.idea/
 *.iml
-target/
+/target/
