@@ -1,6 +1,6 @@
 package cursor.hw9.execution;
 
-import cursor.hw9.task1.model.ExceptionB;
+import cursor.hw9.task1.model.ChildException;
 import cursor.hw9.task1.service.ExceptionService;
 import cursor.hw9.task2.SafeDivision;
 import cursor.hw9.task3.ExceptionGenerator;
@@ -24,8 +24,8 @@ public class Executor {
 
         //task #3
         try {
-            new ExceptionGenerator().throwExceptionB();
-        } catch (ExceptionB exceptionB) {
+            new ExceptionGenerator().generateChildException();
+        } catch (ChildException exceptionB) {
             exceptionB.printStackTrace();
         }
     }

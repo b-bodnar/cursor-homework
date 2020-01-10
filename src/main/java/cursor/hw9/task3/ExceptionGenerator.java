@@ -1,21 +1,21 @@
 package cursor.hw9.task3;
 
-import cursor.hw9.task1.model.ExceptionA;
-import cursor.hw9.task1.model.ExceptionB;
+import cursor.hw9.task1.model.ParentException;
+import cursor.hw9.task1.model.ChildException;
 
 public class ExceptionGenerator {
 
-    private static void generateExceptionA() throws ExceptionA {
-        throw new ExceptionA("ExceptionA throw from method generateExceptionA()");
+    private static void generateParentException() throws ParentException {
+        throw new ParentException("ParentException throw from method generateParentException()");
     }
 
-    public void throwExceptionB() throws ExceptionB {
+    public void generateChildException() throws ChildException {
         try {
-            generateExceptionA();
-        } catch (ExceptionA exceptionA) {
-            ExceptionB exceptionB = new ExceptionB("Throw ExceptionB from method throwExceptionB()");
-            exceptionB.addSuppressed(exceptionA);
-            throw exceptionB;
+            generateParentException();
+        } catch (ParentException parentException) {
+            ChildException childException = new ChildException("Throw ChildException from method generateChildException()");
+            childException.addSuppressed(parentException);
+            throw childException;
         }
     }
 }
