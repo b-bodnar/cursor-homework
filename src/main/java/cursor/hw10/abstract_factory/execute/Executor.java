@@ -8,11 +8,12 @@ import cursor.hw10.abstract_factory.model.transport.Plane;
 
 public class Executor {
     private static TransportFactory factory;
+    private static final int AMERICAN_FACTORY = 1;
+    private static final int GERMAN_FACTORY = 2;
 
     public static void execute() {
 
-        int factoryID = 2;
-        chooseFactory(factoryID);
+        chooseFactory(AMERICAN_FACTORY);
 
         Car car = factory.createCar();
         car.go("New York");
@@ -21,12 +22,12 @@ public class Executor {
         plane.fly("Perice");
     }
 
-    private static void chooseFactory(int factoryID) {
-        switch (factoryID) {
-            case 1:
+    private static void chooseFactory(int factoryToCreate) {
+        switch (factoryToCreate) {
+            case AMERICAN_FACTORY:
                 factory = new GermanFactory();
                 break;
-            case 2:
+            case GERMAN_FACTORY:
                 factory = new AmericanFactory();
                 break;
             default:
