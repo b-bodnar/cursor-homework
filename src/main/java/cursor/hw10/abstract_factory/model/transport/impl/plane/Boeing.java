@@ -4,8 +4,8 @@ import cursor.hw10.abstract_factory.model.transport.Plane;
 
 public class Boeing implements Plane {
     @Override
-    public void fly(String to) {
-        System.out.println("Boeing fly to " + to);
+    public void fly(String destinationPlace) {
+        System.out.println("Boeing fly to " + destinationPlace);
     }
 }
 
