@@ -6,7 +6,6 @@ import cursor.hw10.abstract_factory.model.factory.impl.GermanFactory;
 import cursor.hw10.abstract_factory.model.transport.Car;
 import cursor.hw10.abstract_factory.model.transport.Plane;
 
-
 public class Executor {
     private static TransportFactory factory;
 
