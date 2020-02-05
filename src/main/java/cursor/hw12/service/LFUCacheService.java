@@ -5,7 +5,7 @@ import cursor.hw12.model.Node;
 import java.util.Map;
 
 public class LFUCacheService {
-    private static final int capacity = 10;
+    private static final int CAPACITY = 10;
     private static Map<String, Node> cache;
     public static LFUCacheService lfuCacheService;
 
@@ -50,7 +50,7 @@ public class LFUCacheService {
     }
 
     private boolean isFull() {
-        return cache.size() == capacity;
+        return cache.size() == CAPACITY;
     }
 
     public void printCache() {
