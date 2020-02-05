@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Executor {
 
-    private static boolean flag = false;
+    private static boolean flag;
     private static AtomicInteger count = new AtomicInteger();
 
     public static void execute() {
