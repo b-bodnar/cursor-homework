@@ -4,6 +4,7 @@ import cursor.hw12.dao.AverageSalaryDao;
 import cursor.hw12.model.Node;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 
 public class LFUCacheService {
     private static final int CAPACITY = 10;
@@ -40,14 +41,14 @@ public class LFUCacheService {
         return key;
     }
 
-    public Node getNode(String key) {
+    public Optional<Node> getNode(String key) {
         if (cache.containsKey(key)) {
             Node node = cache.get(key);
             node.setFrequency(node.getFrequency() + 1);
             cache.put(key, node);
-            return node;
+            return Optional.of(node);
         }
-        return null;
+        return Optional.empty();
     }
 
     private boolean isFull() {
