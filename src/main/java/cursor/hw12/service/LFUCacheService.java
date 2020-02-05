@@ -3,6 +3,7 @@ package cursor.hw12.service;
 import cursor.hw12.dao.AverageSalaryDao;
 import cursor.hw12.model.Node;
 import java.util.Map;
+import java.util.Objects;
 
 public class LFUCacheService {
     private static final int CAPACITY = 10;
@@ -14,7 +15,7 @@ public class LFUCacheService {
     }
 
     public static LFUCacheService getInstance() {
-        return lfuCacheService != null
+        return Objects.nonNull(lfuCacheService)
                 ? lfuCacheService
                 : new LFUCacheService();
     }
