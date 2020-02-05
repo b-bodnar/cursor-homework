@@ -12,6 +12,5 @@ public class Node {
 
     public Node(int data) {
         this.averageSalary = data;
-        this.frequency = 0;
     }
 }
