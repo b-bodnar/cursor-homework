@@ -1,4 +1,4 @@
-package cursor.hw14_concurrency.service;
+package cursor.hw15_maven.service;
 
 import java.io.IOException;
 import java.nio.file.Files;

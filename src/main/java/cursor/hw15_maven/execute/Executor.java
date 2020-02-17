@@ -1,6 +1,6 @@
-package cursor.hw14_concurrency.execute;
+package cursor.hw15_maven.execute;
 
-import cursor.hw14_concurrency.service.FileReader;
+import cursor.hw15_maven.service.FileReader;
 
 import java.io.IOException;
 

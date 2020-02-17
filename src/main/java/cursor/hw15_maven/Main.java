@@ -1,6 +1,6 @@
-package cursor.hw14_concurrency;
+package cursor.hw15_maven;
 
-import cursor.hw14_concurrency.execute.Executor;
+import cursor.hw15_maven.execute.Executor;
 
 public class Main {
 
